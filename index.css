@@ -8,7 +8,8 @@
 	--lectura:16px;
 	--lecturaDos:18px;
 	--subtitulos:24px;
-	--titulos:48px;
+	--titulos:32px;
+	--titulosDos:48px;
 	--especialDos:100px;
 
 	/*Colores*/
@@ -62,6 +63,7 @@
 .section h1{
 
 	text-align: center;
+	font-size: var(--titulos);
 	margin-bottom: 50px;
 }
 
