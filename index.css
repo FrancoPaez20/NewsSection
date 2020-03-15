@@ -1,0 +1,142 @@
+/*Fuentes*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap');
+
+:root{
+
+	/*Textos*/
+	--especial:12px;
+	--lectura:16px;
+	--lecturaDos:18px;
+	--subtitulos:24px;
+	--titulos:48px;
+	--especialDos:100px;
+
+	/*Colores*/
+	--colorUno:#181818;
+	--colorDos:#212121;
+	--colorTres:#282828;
+	--colorCuatro:#aaaaaa;
+	--colorCinco:#909090;
+	
+	/*Botones*/
+	--borderRadius: 5px;
+
+	/*Transiciones*/
+	--transicionCorta:.3s;
+	--transicionLarga:.5s;
+}
+
+*{
+
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+	scroll-behavior: smooth;
+	font-family: 'Roboto', sans-serif;
+}
+
+/*INICIO SCROLL BAR*/
+::-webkit-scrollbar{
+
+	width: 10px;
+	background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb{
+
+	border-radius: 0px;
+	background: black;
+}
+/*FIN SCROLL BAR*/
+
+.section{
+
+	width: 100%;
+	padding: 50px;
+}
+
+.section h1{
+
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.section .container{
+
+	width: 100%;
+	max-width: 1300px;
+	margin: auto;
+}
+
+.section .container .news{
+
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 300px);
+	justify-content: space-around;
+	grid-column-gap: 50px;
+	grid-row-gap: 100px;
+
+}
+
+.section .container .news .card{
+
+	width: 100%;
+	/*min-height: 500px;*/
+	word-wrap: break-word;
+	transition: var(--transicionCorta);
+	border: 1px solid black;
+}
+
+.section .container .news .card:hover{
+
+	-webkit-box-shadow: -3px 3px 10px black;
+	-moz-box-shadow: -3px 3px 10px black;
+	box-shadow: -3px 3px 10px black;
+}
+
+.section .container .news .card .portada{
+
+	width: 100%;
+	height: 180px;
+}
+
+.section .container .news .card .portada img{
+
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.section .container .news .card .texts{
+
+	width: 100%;
+	padding: 20px 15px;
+}
+
+.section .container .news .card .texts .date{
+
+	color: var(--colorCinco);
+	font-size: var(--especial);
+}
+
+.fa-calendar{
+
+	margin-right: 8px;
+}
+
+.section .container .news .card .texts .title{
+
+	color: #000; /*Cambiar*/
+	font-size: var(--subtitulos);
+	margin: 12px 0;
+}
+
+.section .container .news .card .texts .text{
+
+	color: #000; /*Cambiar*/
+	font-size: var(--lectura);
+}
